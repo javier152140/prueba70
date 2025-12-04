@@ -1,0 +1,99 @@
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.superior{
+    height: 70%;
+    display: flex;
+    width: 100%;
+}
+.izquierda{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.B{
+    height: 70%;
+    width: 100%;
+    flex-grow: 1; /* el resultado fi*/
+    background-color: chocolate;
+}
+
+.C{
+    height: 30%;
+    width: 100%;
+    flex-grow: 1;
+    font-size: 10px;
+    background-color: aqua;
+}
+.D{
+    height: 40%;
+    width: 100%;
+    background-color: chartreuse;
+}
+.accion{
+    cursor: pointer;
+    background-color: darkorchid;
+    transition: transform 0.2s ease, background-color 0.2 ease;
+}
+.accion:active{
+    transform: translateY(3px);
+    background-color: blue;
+}
+.derecha{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+    
+
+.B:hover{
+    color: aquamarine;
+}
+.inferior{
+    height: 30%;
+    width: 100%;
+    display: flex;
+
+}
+.A{
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    padding: 1.5%;
+    font-size: 10px;
+    width: 100%;
+    background-color: crimson;
+    box-sizing: border-box;
+    transition: color 1s ease;
+}
+.A:hover{
+    color: blue;
+}
+
+
+.E{
+    bottom: 0;
+   right: 0;
+   position: fixed;
+    background-color: gold;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.E:hover{
+    transform: scale(1.15);
+}
